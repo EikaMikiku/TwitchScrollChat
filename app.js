@@ -68,6 +68,11 @@ function buildMessageSpanHTML(info, message) {
 	for(let emote in info.emotes) {
 		let locs = info.emotes[emote];
 		for(let i = 0; i < locs.length; i++) {
+			let start = parseInt(locs[i]);
+			if(start > charLimit - 3) { //3 for ...
+				continue;
+			}
+
 			sorted.push({
 				"loc": locs[i],
 				"emote": emote
