@@ -1,15 +1,19 @@
 # TwitchScrollChat
-Nico nico style chat scroll for browser source.
+NicoNico style scrolling chat for streaming.
+
+## How to use
+Add URL as a browser source to your setup.<br>
+You can customise URL parameters listed below.
 
 ## URL
 https://eikamikiku.github.io/TwitchScrollChat/?channel=forsen
 
-## Params
+## Parameters
 You can add query params by adding them to URL like so: https://eikamikiku.github.io/TwitchScrollChat/?speed=2&msgLimit=20
 
 Parameter  | Default | Note
 ------------- | ------------- | ------------- |
-channel  | forsen | <img src="https://static-cdn.jtvnw.net/emoticons/v1/116051/2.0">
+channel  | forsen | <img src="https://static-cdn.jtvnw.net/emoticons/v1/116051/2.0"> <br>Your Twitch channel name.
 fontSize  | 20px | Size of the font.
 fontColor | white | Color of the font.
 fontFamily | sans-serif | Font family of the font.
