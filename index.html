@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Twitch Chat Counter</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			overflow: hidden;
+		}
+		body > div {
+			text-shadow: 0px 0px 3px black, 1px 1px #8c8c8c;
+			position: absolute;
+			display: inline-block;
+			left: 300px;
+			white-space: nowrap;
+		}
+		.nick {
+			font-weight: bold;
+		}
+		.nick:after {
+			content: ': ';
+		}
+	</style>
+	<script src="tmi.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body></body>
+</html>
