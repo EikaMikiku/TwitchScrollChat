@@ -20,7 +20,7 @@ const client = new tmi.Client({
 client.connect().then(() => {
 	console.log("Connected.");
 	if(bg) {
-		document.body.style.backgroundColor = bg;
+		document.body.style.backgroundColor = "#" + bg;
 	}
 	setInterval(move);
 });
