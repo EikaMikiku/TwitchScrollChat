@@ -22,6 +22,7 @@ client.connect().then(() => {
 	if(bg) {
 		document.body.style.backgroundColor = bg;
 	}
+	setInterval(move);
 });
 
 client.on("message", (channel, info, message) => {
@@ -58,8 +59,6 @@ client.on("message", (channel, info, message) => {
 
 	document.body.appendChild(div);
 });
-
-setInterval(move);
 
 function buildMessageSpanHTML(info, message) {
 	let span = document.createElement("span");
