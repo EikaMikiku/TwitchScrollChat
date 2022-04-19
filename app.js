@@ -86,7 +86,7 @@ function buildMessageSpanHTML(info, message) {
 	for(let i = 0; i < sorted.length; i++) {
 		let obj = sorted[i];
 		let emoteTop = parseInt(parseInt(fontSize) / 3);
-		let img = `<img class="emote" style="top:${emoteTop}px" src="https://static-cdn.jtvnw.net/emoticons/v1/${obj.emote}/${emoteSize}.0">`;
+		let img = `<img class="emote" style="top:${emoteTop}px" src="https://static-cdn.jtvnw.net/emoticons/v2/${obj.emote}/default/dark/${emoteSize}.0">`;
 		let loc = obj.loc.split("-");
 
 		message = message.slice(0, parseInt(loc[0])) + img + message.slice(parseInt(loc[1]) + 1);
